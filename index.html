@@ -84,18 +84,21 @@
         <p class="section-subtitle">One strategic partner across technology, intelligence, governance, and market growth.</p>
 
         <div class="card-grid">
-          <article class="service-card">
+          <article class="service-card service-card-trigger" id="itServicesCard" role="button" tabindex="0" aria-controls="itServicesDetails" aria-expanded="false">
             <h3>IT Services</h3>
             <p>Infrastructure design, secure cloud migration, application modernization, and always-on support services.</p>
+            <p class="service-card-action">Click to view all IT services</p>
           </article>
-          <article class="service-card">
+          <article class="service-card service-card-trigger" id="aiServicesCard" role="button" tabindex="0" aria-controls="aiServicesDetails" aria-expanded="false">
             <h3>AI Solutions</h3>
             <p>Custom AI assistants, workflow automation, predictive analytics, and responsible AI implementation frameworks.</p>
+            <p class="service-card-action">Click to view all AI services</p>
           </article>
           <article class="service-card">
             <h3>Cyber Security Services</h3>
             <p>Threat assessment, SOC support, security hardening, incident response planning, and continuous vulnerability management.</p>
           </article>
+        
           <article class="service-card">
             <h3>Audit Services</h3>
             <p>Operational, compliance, and process audits with actionable controls to improve trust and performance.</p>
@@ -113,6 +116,44 @@
             <p>Ongoing multi-domain support combining technology, operations, and strategy under one accountable team.</p>
           </article>
         </div>
+
+        <section class="service-detail-panel" id="itServicesDetails" aria-label="IT Services details" hidden>
+          <h3>All IT Services We Provide</h3>
+          <ul>
+            <li>Cloud migration and architecture design</li>
+            <li>Network infrastructure setup and optimization</li>
+            <li>Server administration and managed hosting</li>
+            <li>Endpoint management and patching</li>
+            <li>Business website design and development</li>
+            <li>Custom web application development</li>
+            <li>Mobile application development (iOS and Android)</li>
+            <li>E-commerce website and platform development</li>
+            <li>Backup, disaster recovery, and business continuity</li>
+            <li>IT helpdesk and 24/7 technical support</li>
+            <li>Microsoft 365 and Google Workspace administration</li>
+            <li>System integration and API connectivity</li>
+            <li>Application modernization and performance tuning</li>
+            <li>IT strategy consulting and roadmap planning</li>
+          </ul>
+        </section>
+
+        <section class="service-detail-panel" id="aiServicesDetails" aria-label="AI Services details" hidden>
+          <h3>All AI Services We Provide</h3>
+          <ul>
+            <li>AI strategy and use-case discovery</li>
+            <li>Custom AI assistant and chatbot development</li>
+            <li>Workflow automation with AI agents</li>
+            <li>Predictive analytics and forecasting models</li>
+            <li>Natural language processing solutions</li>
+            <li>Computer vision and image intelligence</li>
+            <li>Recommendation engines and personalization</li>
+            <li>LLM integration for enterprise systems</li>
+            <li>Data preparation and model training pipelines</li>
+            <li>Model deployment, monitoring, and optimization</li>
+            <li>Responsible AI governance and compliance</li>
+            <li>AI team training and adoption consulting</li>
+          </ul>
+        </section>
       </div>
     </section>
 
@@ -193,7 +234,7 @@
           <input id="phone" name="phone" type="tel" placeholder="+1 234 567 890" required />
 
           <label for="service">Service Needed</label>
-          <input id="service" name="service" type="text" placeholder="IT / AI / Cyber Security / Audit / Marketing" />
+          <input id="service" name="service" type="text" placeholder="IT / AI / Cyber Security / Website & App Dev / Audit / Marketing" />
 
           <label for="message">Project Details</label>
           <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals"></textarea>
