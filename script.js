@@ -5,6 +5,8 @@ const itServicesCard = document.getElementById("itServicesCard");
 const itServicesDetails = document.getElementById("itServicesDetails");
 const aiServicesCard = document.getElementById("aiServicesCard");
 const aiServicesDetails = document.getElementById("aiServicesDetails");
+const marketingServicesCard = document.getElementById("marketingServicesCard");
+const marketingServicesDetails = document.getElementById("marketingServicesDetails");
 
 function bindServiceToggle(card, details) {
   if (!card || !details) {
@@ -84,3 +86,4 @@ if (form) {
 
 bindServiceToggle(itServicesCard, itServicesDetails);
 bindServiceToggle(aiServicesCard, aiServicesDetails);
+bindServiceToggle(marketingServicesCard, marketingServicesDetails);
