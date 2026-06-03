@@ -37,5 +37,5 @@ Public URL (when running):
 Press `Ctrl + C` in the terminal where each process is running, or kill the process from your terminal.
 
 ## Notes
-- The contact form is currently front-end only and does not send real emails yet.
-- You can connect it to Formspree, EmailJS, or a backend API later.
+- The contact form now sends submissions to `nizar.hazaymeh@gmail.com` through FormSubmit.
+- Important: FormSubmit may send a one-time activation/verification email the first time the form is used. Confirm that email once to start receiving all submissions.
