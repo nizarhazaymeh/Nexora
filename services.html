@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Nexora Solutions service categories and open each service list on its own dedicated page." />
+  <title>Service Directory | Nexora Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html#top" aria-label="Nexora Solutions home">
+        <img class="logo-mark" src="logo.svg" alt="Nexora Solutions logo" />
+        <span class="logo-text">NEXORA</span><span>SOLUTIONS</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#services">Home Services</a></li>
+          <li><a href="#all-services">Service Directory</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-small" href="index.html">Back To Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="all-services" class="services section-reveal">
+      <div class="container">
+        <h1 class="section-title">Service Directory</h1>
+        <p class="section-subtitle">Each service list now opens on its own separate page.</p>
+
+        <div class="card-grid">
+          <a class="service-card service-card-link" href="it-services.html">
+            <h3>IT Services</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="ai-solutions.html">
+            <h3>AI Solutions</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="cyber-security-services.html">
+            <h3>Cyber Security Services</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="audit-services.html">
+            <h3>Audit Services</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="marketing-services.html">
+            <h3>Marketing Services</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="consulting-services.html">
+            <h3>Consulting Services</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+          <a class="service-card service-card-link" href="managed-advisory.html">
+            <h3>Managed Advisory</h3>
+            <p class="service-card-action">Open page</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Nexora Solutions. Built for visionary teams.</p>
+      <a href="#top">Back to Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

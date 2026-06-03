@@ -10,6 +10,14 @@ A futuristic one-page portfolio website for Nexora Solutions showcasing:
 
 ## Project Files
 - `index.html` - Main page content
+- `services.html` - Service directory page
+- `it-services.html` - Detailed IT services page
+- `ai-solutions.html` - Detailed AI solutions page
+- `cyber-security-services.html` - Detailed cyber security services page
+- `audit-services.html` - Detailed audit services page
+- `marketing-services.html` - Detailed marketing services page
+- `consulting-services.html` - Detailed consulting services page
+- `managed-advisory.html` - Detailed managed advisory page
 - `styles.css` - UI styling and responsive layout
 - `script.js` - Footer year and contact form client-side behavior
 
@@ -17,7 +25,7 @@ A futuristic one-page portfolio website for Nexora Solutions showcasing:
 From this folder:
 
 ```bash
-/Users/nizarhazaymeh/Desktop/Nexus/.venv/bin/python -m http.server 8080
+/Users/nizarhazaymeh/Desktop/Nexora/.venv/bin/python -m http.server 8080
 ```
 
 Open:
