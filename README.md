@@ -1,6 +1,6 @@
-# Nexora Solutions Portfolio Website
+# Nexora Solutions
 
-A futuristic one-page portfolio website for Nexora Solutions showcasing:
+A portfolio website for Nexora Solutions, showcasing:
 - IT Services
 - AI Solutions
 - Cyber Security Services
@@ -8,42 +8,73 @@ A futuristic one-page portfolio website for Nexora Solutions showcasing:
 - Marketing
 - Consulting
 
-## Project Files
-- `index.html` - Main page content
-- `services.html` - Service directory page
-- `it-services.html` - Detailed IT services page
-- `ai-solutions.html` - Detailed AI solutions page
-- `cyber-security-services.html` - Detailed cyber security services page
-- `audit-services.html` - Detailed audit services page
-- `marketing-services.html` - Detailed marketing services page
-- `consulting-services.html` - Detailed consulting services page
-- `managed-advisory.html` - Detailed managed advisory page
-- `styles.css` - UI styling and responsive layout
-- `script.js` - Footer year and contact form client-side behavior
+The site has been migrated from a static HTML/CSS/JS build to a modern **React + TypeScript** application. The landing page features an animated **Background Paths** hero built with Framer Motion and shadcn/ui.
 
-## Run Locally
-From this folder:
+## Tech Stack
+- **React 18** + **TypeScript**
+- **Vite** — dev server and build tool
+- **Tailwind CSS** — styling (with the shadcn CSS-variable theme)
+- **shadcn/ui** — component primitives (`Button`)
+- **Framer Motion** — hero animation
+- **lucide-react** — icons (available for future use)
 
-```bash
-/Users/nizarhazaymeh/Desktop/Nexora/.venv/bin/python -m http.server 8080
+## Project Structure
+```
+.
+├── index.html                 # Vite entry HTML
+├── public/
+│   └── logo.svg               # App favicon / logo
+├── src/
+│   ├── main.tsx               # React entry point
+│   ├── App.tsx                # Mounts the BackgroundPaths hero
+│   ├── index.css              # Tailwind directives + shadcn theme variables
+│   ├── lib/
+│   │   └── utils.ts           # cn() class-merge helper
+│   └── components/
+│       └── ui/
+│           ├── background-paths.tsx   # Animated hero component
+│           └── button.tsx             # shadcn Button
+├── components.json            # shadcn CLI config
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.ts
+├── tsconfig.json
+└── legacy/                    # Previous static HTML/CSS/JS site (archived)
 ```
 
-Open:
-- http://localhost:8080
+> **Note:** The original static site (multiple `.html` pages, `styles.css`, `script.js`) is preserved under [`legacy/`](legacy/) for reference. Those pages still cross-link within that folder.
 
-## Public Share (Optional)
-To expose your local site publicly:
+## Getting Started
 
+Install dependencies:
 ```bash
-npx --yes localtunnel --port 8080 --subdomain nexora-solutions-8080
+npm install
 ```
 
-Public URL (when running):
-- https://nexora-solutions-8080.loca.lt
+Start the dev server:
+```bash
+npm run dev
+```
+Open http://localhost:5173 (Vite will pick the next free port if 5173 is taken).
 
-## Stop Running Services
-Press `Ctrl + C` in the terminal where each process is running, or kill the process from your terminal.
+Build for production:
+```bash
+npm run build
+```
+Output is written to `dist/`.
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+## Adding More shadcn Components
+Components live under `src/components/ui` (the shadcn default). To add more:
+```bash
+npx shadcn@latest add <component>
+```
 
 ## Notes
-- The contact form now sends submissions to `nizar.hazaymeh@gmail.com` through FormSubmit.
-- Important: FormSubmit may send a one-time activation/verification email the first time the form is used. Confirm that email once to start receiving all submissions.
+- The hero `title` is configurable via the `BackgroundPaths` component prop in [src/App.tsx](src/App.tsx).
+- Dark mode is supported by the components via Tailwind `dark:` variants — add `class="dark"` to the `<html>` element to enable it.
+- The contact form from the legacy site (FormSubmit → `nizar.hazaymeh@gmail.com`) has not yet been ported into the React app.
